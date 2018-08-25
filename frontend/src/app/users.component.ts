@@ -12,7 +12,7 @@ import { ApiService } from './api.service';
 })
 export class UsersComponent implements OnInit {
 
-  constructor(private service: ApiService) {}
+  constructor(public service: ApiService) {}
 
   ngOnInit() {
     this.service.getUsers();
